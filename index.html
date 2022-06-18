@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator</title>
+    <!-- link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- link font-awesome -->
+    <script src="https://kit.fontawesome.com/c8ae339e7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container">
+                <a href="#" class="navbar-brand"><i class="fa fa-qrcode" aria-hidden="true"></i> QRCode Generator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active"><i class="fa fa-github" aria-hidden="true"></i> Source Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <div class="container mt-5">
+        <h6 class="text-center">This QRCode Geneator Using <a href="https://jquery.com/" target="_blank">JQuery</a> and <a href="https://github.com/jeromeetienne/jquery-qrcode" target="_blank" class="text-primary">QRCode Plugin</a>.</h6>
+
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-md-6">
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Insert Text Here and Press The Button" id="qrText" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="qrButton">Generate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <h5>Result :</h5>
+
+        <div id="result" class="d-flex justify-content-center"></div>
+    </div>
+
+    <!-- link js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="jquery.qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
